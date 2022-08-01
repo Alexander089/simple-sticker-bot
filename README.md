@@ -1,2 +1,2 @@
 # whatsapp-sticker-bot
-A simple sticker bot using whatsapp-web.js package from NPM
+A simple sticker bot using [whatsapp-web.js](https://www.npmjs.com/package/whatsapp-web.js) package from [NPM](https://www.npmjs.com/).
