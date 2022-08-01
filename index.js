@@ -7,7 +7,6 @@ const fetch = require('node-fetch');
 
 const client = new Client({
         puppeteer: { args: ["--no-sandbox"] },
-        authStrategy: new LocalAuth()
     });
 
 client.on('qr', qr => {
@@ -43,7 +42,6 @@ client.on('message', async message => {
                                 fs.writeFileSync(fullFilename, media.data, { encoding: 'base64' });
                                 console.log('[CONSOLE] > File downloaded successfully!', fullFilename);
                                 MessageMedia.fromFilePath(filePath = fullFilename)
-                                message.reply('Mohon diingat, Semua kemarahan dan kebencian diluar tanggung jawab saya :v');
                                 client.sendMessage(message.from, new MessageMedia(media.mimetype, media.data, filename), { sendMediaAsSticker: true,stickerAuthor:"Created By Alex55000",stickerName:"Stickers"} )
                                 fs.unlinkSync(fullFilename)
                                 console.log(`[CONSOLE] > File Deleted successfully!`,);
@@ -58,7 +56,7 @@ client.on('message', async message => {
         })
 
 client.on('ready', () => {
-        console.log('Client is ready!');
+        console.log('[CONSOLE] > Client is ready!');
     });
     
 client.initialize();
