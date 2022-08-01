@@ -1,15 +1,12 @@
 const qrcode = require('qrcode-terminal');
 const fs = require('fs');
 const { Client, MessageMedia ,LocalAuth, Buttons, GroupChat, Util } = require('whatsapp-web.js');
-const SESSION_FILE_PATH = './session.json';
 const mime = require('mime-types');
 const path = require('path');
 const fetch = require('node-fetch');
 
 const client = new Client({
         puppeteer: { args: ["--no-sandbox"] },
-        ffmpeg:'./ffmpeg',
-        session: sessionData,
         authStrategy: new LocalAuth()
     });
 
