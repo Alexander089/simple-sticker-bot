@@ -14,7 +14,13 @@ client.on('qr', qr => {
         qrcode.generate(qr, { small: true });
     });
 
-if(message.body === '-sticker'){
+client.on('message', async message => {
+        const from = message.from;
+        const cutted = from.split('@');
+        let chat = await message.getChat();
+        chat.sendSeen();
+        
+        if(message.body === '-sticker'){
                 if(message.hasMedia){
                     message.downloadMedia().then(media => {
     
