@@ -2,7 +2,6 @@ const qrcode = require('qrcode-terminal');
 const fs = require('fs');
 const { Client, MessageMedia, LocalAuth, Buttons, GroupChat, Util } = require('whatsapp-web.js');
 const mime = require('mime-types');
-const fetch = require('node-fetch');
 
 const client = new Client({
         puppeteer: { args: ["--no-sandbox"] },
