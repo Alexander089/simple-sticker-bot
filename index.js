@@ -7,6 +7,7 @@ const fetch = require('node-fetch');
 
 const client = new Client({
         puppeteer: { args: ["--no-sandbox"] },
+        authStrategy: new LocalAuth()
     });
 
 client.on('qr', qr => {
