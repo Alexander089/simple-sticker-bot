@@ -1,5 +1,6 @@
 # whatsapp-sticker-bot
 A simple sticker bot using [whatsapp-web.js](https://www.npmjs.com/package/whatsapp-web.js) package from [NPM](https://www.npmjs.com/).
+![preview](https://user-images.githubusercontent.com/67031950/182174749-0d9a76a0-5851-4e12-9700-f4f2c4df4d74.PNG)
 
 Still not working for GIFs stickers i guess.
 
