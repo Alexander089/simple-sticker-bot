@@ -3,7 +3,7 @@ A simple sticker bot using [whatsapp-web.js](https://www.npmjs.com/package/whats
 
 Still not working for GIFs stickers i guess.
 
-Please remember, the code is still not perfectly done, a future changes will be added maybe.
+Please remember, the code is still not perfectly done, a future changes will be added maybe. For copyright matters please open a issues.
 
 # How to use
 1. Install [whatsapp-web.js](https://www.npmjs.com/package/whatsapp-web.js), [fs](https://www.npmjs.com/package/fs), [mime-types](https://www.npmjs.com/package/mime-types), [qrcode-terminal](https://www.npmjs.com/package/qrcode-terminal), and [node-fetch@2.6.1](https://www.npmjs.com/package/node-fetch/v/2.6.1) from [NPM](https://www.npmjs.com).
